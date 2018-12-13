@@ -14,10 +14,15 @@
               <li>
                 <a href="<%= root_path %>" data-turbolinks="false">Home</a>
               </li>
-              <li><a href="<%= new_user_session_path %>" >Sign In</a></li>
-              <li><a href="<%= new_user_registration_path %>" >Registration</a></li>
-              <li><a href="<%= destroy_user_session_path %>" method="delete" data-turbolinks="false">Logout</a></li>
-              <li><a href="<%= blogs_path %>" data-turbolinks="false">Blog</a></li>
+              <% if user_signed_in? %>
+                <li>
+                  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+                </li>
+              <% else %>
+                <li><a href="<%= new_user_session_path %>">Sign In</a></li>
+                <li><a href="<%= new_user_registration_path %>">Registration</a></li>
+                <li><a href="<%= blogs_path %>" data-turbolinks="false">Blog</a></li>
+              <% end %>
               <!--<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Headers</a>-->
                 <!--<ul class="dropdown-menu">-->
                   <!--<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Static Image Header</a>-->

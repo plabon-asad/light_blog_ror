@@ -42,6 +42,14 @@
   <!-- Main Nav menu -->
   <%= render 'shared/nav' %>
 
+  <!-- Notification -->
+  <% if notice %>
+    <div class="alert alert-success" role="alert">
+      <button class="close" type="button" data-dismiss="alert" aria-hidden="true">×</button><i class="fa fa-exclamation-triangle"></i>
+      <%= notice %>
+    </div>
+  <% end %>
+
   <%= yield %>
 
 </div>
