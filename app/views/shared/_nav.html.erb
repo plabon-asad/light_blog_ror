@@ -7,16 +7,17 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<%= root_path %>">Light Blog</a>
+            <a class="navbar-brand" href="<%= root_path %>" data-turbolinks="false">Light Blog</a>
           </div>
           <div class="collapse navbar-collapse" id="custom-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li>
-                <a href="<%= root_path %>">Home</a>
+                <a href="<%= root_path %>" data-turbolinks="false">Home</a>
               </li>
-              <li><a href="#">Sign In</a></li>
-              <li><a href="#">Registration</a></li>
-              <li><a href="<%= blogs_path %>">Blog</a></li>
+              <li><a href="<%= new_user_session_path %>" >Sign In</a></li>
+              <li><a href="<%= new_user_registration_path %>" >Registration</a></li>
+              <li><a href="<%= destroy_user_session_path %>" method="delete" data-turbolinks="false">Logout</a></li>
+              <li><a href="<%= blogs_path %>" data-turbolinks="false">Blog</a></li>
               <!--<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Headers</a>-->
                 <!--<ul class="dropdown-menu">-->
                   <!--<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Static Image Header</a>-->

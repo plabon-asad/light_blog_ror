@@ -26,3 +26,20 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+/* Page loding  */
+$(document).on("turbolinks:click", function(){
+    $(".page-loader").show();
+});
+
+$(document).on("turbolinks:load", function(){
+    $(".page-loader").hide();
+});
+
+// $(document).on("page:fetch", function(){
+//     $(".page-loader").show();
+// });
+//
+// $(document).on("page:receive", function(){
+//     $(".page-loader").hide();
+// });
