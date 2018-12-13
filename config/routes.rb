@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   root 'blogs#landing'
   resources :comments, :blogs, :users
 
-  get 'test', to: 'blogs#show'
+  # get 'test', to: 'blogs#show'
 end
