@@ -28,18 +28,18 @@
               <p class="help-block text-danger"></p>
             </div>
 
-            <div class="form-group">
-              <%= f.label :phone, class: 'sr-only' %><br/>
-              <%= f.text_field :phone, class: 'form-control', :placeholder => 'Your Phone Number*' %>
-              <p class="help-block text-danger"></p>
-            </div>
+            <!--<div class="form-group">-->
+          <!--<%#= f.label :phone, class: 'sr-only' %><br/>-->
+              <!--<%#= f.text_field :phone, class: 'form-control', :placeholder => 'Your Phone Number*' %>-->
+              <!--<p class="help-block text-danger"></p>-->
+            <!--</div>-->
 
             <div class="form-group">
               <%= f.label :password, class: 'sr-only' %><br/>
-              <% if @minimum_password_length %>
-                <em>(<%= @minimum_password_length %> characters minimum)</em>
-              <% end %>
               <%= f.password_field :password, class: 'form-control', autocomplete: 'off', :placeholder => 'Password' %>
+              <% if @minimum_password_length %>
+                <em>Password (<%= @minimum_password_length %> characters minimum)</em>
+              <% end %>
               <p class="help-block text-danger"></p>
             </div>
 
@@ -50,7 +50,7 @@
             </div>
 
 
-            <div class="text-center">
+            <div class="text-center" style="padding-top: 15px">
               <%= f.submit 'Submit', class: 'btn btn-block btn-round btn-d', id: 'cfsubmit' %>
               <!--<button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Submit</button>-->
             </div>
