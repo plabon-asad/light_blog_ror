@@ -1,26 +1,48 @@
-<h2>Log in</h2>
-
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+<section class="module" id="signin">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <h2 class="module-title font-alt">Sign In</h2>
+        <div class="module-subtitle font-serif"></div>
+      </div>
     </div>
-  <% end -%>
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
+          <div class="alert alert-danger" role="alert">
+            <button class="close" type="button" data-dismiss="alert" aria-hidden="true">×</button><i class="fa fa-exclamation-triangle"></i>
+            <%= devise_error_messages! %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :email, class: 'sr-only' %><br/>
+            <%= f.email_field :email, class: 'form-control', :placeholder => 'Your Email*' %>
+            <p class="help-block text-danger"></p>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :password, class: 'sr-only' %><br/>
+            <%= f.password_field :password, class: 'form-control', autocomplete: 'off', :placeholder => 'Password' %>
+            <p class="help-block text-danger"></p>
+          </div>
+
+          <% if devise_mapping.rememberable? -%>
+            <div class="field">
+              <%= f.check_box :remember_me %>
+              <%= f.label :remember_me %>
+            </div>
+          <% end -%>
+
+
+          <div class="text-center" style="padding-top: 15px">
+            <%= f.submit 'Submit', class: 'btn btn-block btn-round btn-d', id: 'cfsubmit' %>
+            <!--<button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Submit</button>-->
+          </div>
+          <!--</form>-->
+        <% end %>
+        <div class="ajax-response font-alt" id="contactFormResponse"></div>
+      </div>
+    </div>
   </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</section>

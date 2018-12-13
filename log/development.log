@@ -41730,3 +41730,10 @@ Completed 200 OK in 183ms (Views: 180.0ms | ActiveRecord: 0.0ms)
 
 
 Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-13 19:17:39 +0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-12-13 19:38:26 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (26.5ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 164ms (Views: 159.6ms | ActiveRecord: 0.0ms)
