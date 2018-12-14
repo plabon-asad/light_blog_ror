@@ -20,24 +20,31 @@
               <div class="col-md-6 col-lg-6">
                 <div class="post">
                   <div class="post-thumbnail">
-                    <a href="<%= blogs_path %>">
+                    <%= link_to blog do %>
                       <%= image_tag blog.image_url %>
-                      <!--<img src="assets/images/post-2.jpg" alt="Blog-post Thumbnail"/>-->
+                    <% end %>
                     </a>
                   </div>
                   <div class="post-header font-alt">
                     <h2 class="post-title">
-                      <a href="<%= blogs_path %>"><%= blog.title %></a>
+                      <%= link_to blog do %>
+                        <%= blog.title %>
+                      <% end %>
                     </h2>
                     <div class="post-meta">
                       By&nbsp;<a href="#">Mark Stone</a>&nbsp;| <%= blog.created_at.strftime('%FT%T') %> | 3 Comments
                     </div>
                   </div>
                   <div class="post-entry">
-                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring
-                      which I enjoy with my whole heart.</p>
+                    <p>
+                      <%= blog.description %>
+                    </p>
                   </div>
-                  <div class="post-more"><a class="more-link" href="<%= blogs_path %>">Read more</a></div>
+                  <div class="post-more">
+                    <%= link_to blog, class: 'more-link' do %>
+                      Read more
+                    <% end %>
+                  </div>
                 </div>
               </div>
             <% end %>
