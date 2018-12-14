@@ -39,6 +39,12 @@
             <p class="help-block text-danger"></p>
           </div>
 
+          <div class="form-group">
+            <%= f.label :image_url, class: 'sr-only' %><br/>
+            <%= f.file_field :image_url, class: 'form-control' %>
+            <p class="help-block text-danger"></p>
+          </div>
+
           <div class="text-center form-group" style="padding-top: 15px">
             <%= f.submit 'Submit', class: 'btn btn-block btn-round btn-d', id: 'cfsubmit' %>
           </div>
