@@ -41920,3 +41920,2213 @@ Started GET "/assets/prev-light.png" for 127.0.0.1 at 2018-12-14 14:56:10 +0600
 
 
 Started GET "/assets/flexslider_icon/flexslider-icon.woff" for 127.0.0.1 at 2018-12-14 14:56:10 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-14 15:26:33 +0600
+Processing by BlogsController#landing as HTML
+  Rendered shared/_nav.html.erb (1.0ms)
+  Rendered shared/_contact.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (5.8ms)
+  Rendered blogs/landing.html.erb within layouts/application (41.3ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 163ms (Views: 161.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/section-10.jpg" for 127.0.0.1 at 2018-12-14 15:26:34 +0600
+
+
+Started GET "/assets/section-9.jpg" for 127.0.0.1 at 2018-12-14 15:26:34 +0600
+
+
+Started GET "/assets/section-8.jpg" for 127.0.0.1 at 2018-12-14 15:26:34 +0600
+
+
+Started GET "/assets/et_line/et-line.woff" for 127.0.0.1 at 2018-12-14 15:26:34 +0600
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 15:26:34 +0600
+
+
+Started GET "/assets/testimonial_bg.jpg" for 127.0.0.1 at 2018-12-14 15:26:34 +0600
+
+
+Started GET "/assets/section-6.jpg" for 127.0.0.1 at 2018-12-14 15:26:34 +0600
+
+
+Started GET "/assets/next-light.png" for 127.0.0.1 at 2018-12-14 15:26:34 +0600
+
+
+Started GET "/assets/prev-light.png" for 127.0.0.1 at 2018-12-14 15:26:34 +0600
+
+
+Started GET "/assets/flexslider_icon/flexslider-icon.woff" for 127.0.0.1 at 2018-12-14 15:26:34 +0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-12-14 15:28:04 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (22.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (128.0ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 348ms (Views: 293.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-12-14 15:44:33 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (10.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.1ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 146ms (Views: 143.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-12-14 15:44:36 +0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (10.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (37.5ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 185ms (Views: 177.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-12-14 15:44:40 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (19.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (52.8ms)
+  Rendered shared/_nav.html.erb (1.9ms)
+Completed 200 OK in 307ms (Views: 280.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-12-14 15:44:43 +0600
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (13.9ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (40.6ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 197ms (Views: 192.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/password" for 127.0.0.1 at 2018-12-14 15:45:42 +0600
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"soiuwpsNakt+Y0jyNrnVsF42KMRR+SIs6ZdxygiVHmOZKYKJKSNzTEApFYvsVK+yM9z16kGXL7OGJbicCbstuA==", "user"=>{"email"=>"plabondotasad@gmail.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'plabondotasad@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`reset_password_token` = '6987efa89728ebf835d89256eb717045529a32d31dbcff2ec7cee56dc2fd9377'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE `users` SET `reset_password_token` = '6987efa89728ebf835d89256eb717045529a32d31dbcff2ec7cee56dc2fd9377', `reset_password_sent_at` = '2018-12-14 09:45:43.596933', `updated_at` = '2018-12-14 09:45:43.598492' WHERE `users`.`id` = 5[0m
+  [1m[35m (130.7ms)[0m  COMMIT
+  Rendered devise/mailer/reset_password_instructions.html.erb (11.0ms)
+
+Devise::Mailer#reset_password_instructions: processed outbound mail in 1047.5ms
+
+Sent mail to plabondotasad@gmail.com (25.7ms)
+Date: Fri, 14 Dec 2018 15:45:44 +0600
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: plabondotasad@gmail.com
+Message-ID: <5c137bc8e673a_2fb33fd8b38098ac725ec@nazrul-Latitude-E7440.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello plabondotasad@gmail.com!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/users/password/edit?reset_password_token=hu9E6eC2EU-KeNtxFTMC">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 2129ms (ActiveRecord: 133.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-12-14 15:45:44 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (9.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.9ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 136ms (Views: 133.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-12-14 15:46:19 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (11.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.4ms)
+  Rendered shared/_nav.html.erb (1.6ms)
+Completed 200 OK in 166ms (Views: 162.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-12-14 15:46:25 +0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (22.5ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 210ms (Views: 207.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-12-14 15:46:29 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (16.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (34.5ms)
+  Rendered shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 169ms (Views: 164.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-12-14 15:46:33 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (9.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.7ms)
+  Rendered shared/_nav.html.erb (1.5ms)
+Completed 200 OK in 137ms (Views: 134.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-12-14 15:46:45 +0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (38.6ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 160ms (Views: 156.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-12-14 15:46:51 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (11.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (43.6ms)
+  Rendered shared/_nav.html.erb (1.7ms)
+Completed 200 OK in 186ms (Views: 181.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-12-14 15:46:53 +0600
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (18.2ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (32.1ms)
+  Rendered shared/_nav.html.erb (1.8ms)
+Completed 200 OK in 199ms (Views: 196.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/password" for 127.0.0.1 at 2018-12-14 15:47:00 +0600
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YFO6Q4MCV2QosCGyTkYlpqiL+Vu7PrromDUnN+5DGc5L8pYIMSxOYxb6fMuUq1+kxWEkdatQt3f3h+5h720qFQ==", "user"=>{"email"=>"plabondotasad@gmail.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'plabondotasad@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`reset_password_token` = '318d46924ecfd0fb7fd35469c7f532bacbe75fc1005eed21f865604bcd38103c'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  UPDATE `users` SET `reset_password_token` = '318d46924ecfd0fb7fd35469c7f532bacbe75fc1005eed21f865604bcd38103c', `reset_password_sent_at` = '2018-12-14 09:47:00.587427', `updated_at` = '2018-12-14 09:47:00.589640' WHERE `users`.`id` = 5
+  [1m[36m (53.0ms)[0m  [1mCOMMIT[0m
+  Rendered devise/mailer/reset_password_instructions.html.erb (9.2ms)
+
+Devise::Mailer#reset_password_instructions: processed outbound mail in 33.4ms
+
+Sent mail to plabondotasad@gmail.com (8.0ms)
+Date: Fri, 14 Dec 2018 15:47:00 +0600
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: plabondotasad@gmail.com
+Message-ID: <5c137c14a80c2_2fb33fd8aafa4994726a2@nazrul-Latitude-E7440.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello plabondotasad@gmail.com!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/users/password/edit?reset_password_token=oxjDa-5kZPP-Fb8H4-Jy">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 149ms (ActiveRecord: 55.8ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-12-14 15:47:00 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (16.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (33.3ms)
+  Rendered shared/_nav.html.erb (1.6ms)
+Completed 200 OK in 234ms (Views: 228.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/edit?reset_password_token=[FILTERED]" for 127.0.0.1 at 2018-12-14 15:50:09 +0600
+Processing by Devise::PasswordsController#edit as HTML
+  Parameters: {"reset_password_token"=>"[FILTERED]"}
+  Rendered devise/shared/_links.html.erb (18.5ms)
+  Rendered devise/passwords/edit.html.erb within layouts/application (65.6ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 206ms (Views: 202.1ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/users/password" for 127.0.0.1 at 2018-12-14 15:50:40 +0600
+Processing by Devise::PasswordsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3qkpvykAayu6GmJUx8jsNzdCXowWN9vL0+VZ9es0IMj1CAX0my5yLIRQPy0dJZY1WqiDogZZ1lS8V5Cj6hoTEw==", "user"=>{"reset_password_token"=>"[FILTERED]", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Change my password"}
+  [1m[35mUser Load (1.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`reset_password_token` = '318d46924ecfd0fb7fd35469c7f532bacbe75fc1005eed21f865604bcd38103c'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE `users` SET `encrypted_password` = '$2a$11$0gkatMQEJ1FcNQl1UkDc8eBXcZIP1hZ7ZfACQYhJ3uRgaPMZasHmC', `updated_at` = '2018-12-14 09:50:41.089682', `reset_password_token` = NULL, `reset_password_sent_at` = NULL WHERE `users`.`id` = 5
+  [1m[36m (164.9ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2018-12-14 06:58:04.000000', `current_sign_in_at` = '2018-12-14 09:50:41.263086', `sign_in_count` = 3, `updated_at` = '2018-12-14 09:50:41.266486' WHERE `users`.`id` = 5[0m
+  [1m[35m (107.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 844ms (ActiveRecord: 275.6ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-14 15:50:41 +0600
+Processing by BlogsController#index as HTML
+  Rendered blogs/shared/_right_sidebar.erb (5.4ms)
+  Rendered shared/_footer.html.erb (3.3ms)
+  Rendered blogs/index.html.erb within layouts/application (28.5ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_nav.html.erb (4.2ms)
+Completed 200 OK in 174ms (Views: 157.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 15:50:42 +0600
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-12-14 15:50:50 +0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FHxMAQEDG4yu83gLOCfbvNX2XNYGnd7YIm+sPYZO6Bk/3WBKsy0Ci5C5JXLiyqG+uByB+Bbz00dN3WVrh2Dbwg=="}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 5  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-14 15:50:50 +0600
+Processing by BlogsController#landing as HTML
+  Rendered shared/_nav.html.erb (1.8ms)
+  Rendered shared/_contact.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (4.1ms)
+  Rendered blogs/landing.html.erb within layouts/application (44.7ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 184ms (Views: 182.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/section-10.jpg" for 127.0.0.1 at 2018-12-14 15:50:50 +0600
+
+
+Started GET "/assets/section-9.jpg" for 127.0.0.1 at 2018-12-14 15:50:50 +0600
+
+
+Started GET "/assets/section-8.jpg" for 127.0.0.1 at 2018-12-14 15:50:51 +0600
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 15:50:51 +0600
+
+
+Started GET "/assets/et_line/et-line.woff" for 127.0.0.1 at 2018-12-14 15:50:51 +0600
+
+
+Started GET "/assets/testimonial_bg.jpg" for 127.0.0.1 at 2018-12-14 15:50:51 +0600
+
+
+Started GET "/assets/section-6.jpg" for 127.0.0.1 at 2018-12-14 15:50:51 +0600
+
+
+Started GET "/assets/next-light.png" for 127.0.0.1 at 2018-12-14 15:50:51 +0600
+
+
+Started GET "/assets/prev-light.png" for 127.0.0.1 at 2018-12-14 15:50:51 +0600
+
+
+Started GET "/assets/flexslider_icon/flexslider-icon.woff" for 127.0.0.1 at 2018-12-14 15:50:51 +0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-12-14 15:51:25 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (14.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (36.1ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 191ms (Views: 179.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-14 15:51:30 +0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Of4x1i07dYyKxyECZ08/E1FUKcSYugHU2Lr0GYDU6SOS+qWEQE98CezSFt+r+qbrfqrH3bYxRaLpj0Mfq6c3eQ==", "user"=>{"email"=>"plabondotasad@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Submit"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'plabondotasad@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 531ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Of4x1i07dYyKxyECZ08/E1FUKcSYugHU2Lr0GYDU6SOS+qWEQE98CezSFt+r+qbrfqrH3bYxRaLpj0Mfq6c3eQ==", "user"=>{"email"=>"plabondotasad@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Submit"}
+  Rendered devise/shared/_links.html.erb (8.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.2ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 673ms (Views: 162.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-12-14 15:52:52 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (9.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (28.5ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 147ms (Views: 144.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-14 15:53:03 +0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eT2trggcSYY7aMUeDWan84rsA909HqA4LN8lbyKuU+7SOTn8ZWhAA1198sPB0z4LpRLtxBOV5E4d6pJpCd2NtA==", "user"=>{"email"=>"plabondotasad@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Submit"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'plabondotasad@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 401 Unauthorized in 531ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eT2trggcSYY7aMUeDWan84rsA909HqA4LN8lbyKuU+7SOTn8ZWhAA1198sPB0z4LpRLtxBOV5E4d6pJpCd2NtA==", "user"=>{"email"=>"plabondotasad@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Submit"}
+  Rendered devise/shared/_links.html.erb (9.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (20.6ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 665ms (Views: 154.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-14 15:53:22 +0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TIYC/zGPH8LHKsY4N8hZk/s9jGT3bBZpL2Csq+fCHlHngpatXPsWR6E/8eX7fcBr1MNifdnnUh8eVRutzLHACw==", "user"=>{"email"=>"plabondotasad@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'plabondotasad@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2018-12-14 09:50:41.000000', `current_sign_in_at` = '2018-12-14 09:53:23.186645', `sign_in_count` = 4, `updated_at` = '2018-12-14 09:53:23.190215' WHERE `users`.`id` = 5[0m
+  [1m[35m (118.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 717ms (ActiveRecord: 120.4ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-14 15:53:23 +0600
+Processing by BlogsController#index as HTML
+  Rendered blogs/shared/_right_sidebar.erb (4.1ms)
+  Rendered shared/_footer.html.erb (2.6ms)
+  Rendered blogs/index.html.erb within layouts/application (20.8ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_nav.html.erb (3.5ms)
+Completed 200 OK in 133ms (Views: 130.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 15:53:23 +0600
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-12-14 15:53:32 +0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RldD0r7iy0zwmHiWmDL1TqWlaqV3MUSfW9+4pbeypRDbn4K7M8dPVHJyvVlQA1yU8eX+94jfrxQAUh1W8HODjQ=="}
+  [1m[35mUser Load (3.6ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 5  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 61ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-14 15:53:32 +0600
+Processing by BlogsController#landing as HTML
+  Rendered shared/_nav.html.erb (1.4ms)
+  Rendered shared/_contact.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (4.8ms)
+  Rendered blogs/landing.html.erb within layouts/application (58.2ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 167ms (Views: 165.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/section-10.jpg" for 127.0.0.1 at 2018-12-14 15:53:33 +0600
+
+
+Started GET "/assets/section-9.jpg" for 127.0.0.1 at 2018-12-14 15:53:33 +0600
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 15:53:33 +0600
+
+
+Started GET "/assets/et_line/et-line.woff" for 127.0.0.1 at 2018-12-14 15:53:33 +0600
+
+
+Started GET "/assets/section-8.jpg" for 127.0.0.1 at 2018-12-14 15:53:33 +0600
+
+
+Started GET "/assets/testimonial_bg.jpg" for 127.0.0.1 at 2018-12-14 15:53:33 +0600
+
+
+Started GET "/assets/section-6.jpg" for 127.0.0.1 at 2018-12-14 15:53:33 +0600
+
+
+Started GET "/assets/next-light.png" for 127.0.0.1 at 2018-12-14 15:53:33 +0600
+
+
+Started GET "/assets/prev-light.png" for 127.0.0.1 at 2018-12-14 15:53:33 +0600
+
+
+Started GET "/assets/flexslider_icon/flexslider-icon.woff" for 127.0.0.1 at 2018-12-14 15:53:33 +0600
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-12-14 15:54:10 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (23.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (42.1ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 234ms (Views: 230.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-12-14 15:54:14 +0600
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (19.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (33.1ms)
+  Rendered shared/_nav.html.erb (2.3ms)
+Completed 200 OK in 329ms (Views: 325.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-12-14 15:54:46 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (18.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (36.8ms)
+  Rendered shared/_nav.html.erb (1.5ms)
+Completed 200 OK in 248ms (Views: 244.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-12-14 15:54:50 +0600
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (42.8ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (58.0ms)
+  Rendered shared/_nav.html.erb (1.2ms)
+Completed 200 OK in 254ms (Views: 251.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-12-14 15:54:52 +0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (29.9ms)
+  Rendered shared/_nav.html.erb (1.6ms)
+Completed 200 OK in 242ms (Views: 238.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-12-14 15:54:54 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (14.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (36.7ms)
+  Rendered shared/_nav.html.erb (2.0ms)
+Completed 200 OK in 267ms (Views: 251.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-12-14 15:54:56 +0600
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (17.5ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (33.3ms)
+  Rendered shared/_nav.html.erb (1.5ms)
+Completed 200 OK in 247ms (Views: 238.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-14 15:55:10 +0600
+Processing by BlogsController#landing as HTML
+  Rendered shared/_nav.html.erb (1.4ms)
+  Rendered shared/_contact.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (6.1ms)
+  Rendered blogs/landing.html.erb within layouts/application (51.3ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 189ms (Views: 187.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/section-10.jpg" for 127.0.0.1 at 2018-12-14 15:55:11 +0600
+
+
+Started GET "/assets/section-9.jpg" for 127.0.0.1 at 2018-12-14 15:55:11 +0600
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 15:55:11 +0600
+
+
+Started GET "/assets/section-8.jpg" for 127.0.0.1 at 2018-12-14 15:55:11 +0600
+
+
+Started GET "/assets/et_line/et-line.woff" for 127.0.0.1 at 2018-12-14 15:55:11 +0600
+
+
+Started GET "/assets/testimonial_bg.jpg" for 127.0.0.1 at 2018-12-14 15:55:11 +0600
+
+
+Started GET "/assets/section-6.jpg" for 127.0.0.1 at 2018-12-14 15:55:11 +0600
+
+
+Started GET "/assets/next-light.png" for 127.0.0.1 at 2018-12-14 15:55:11 +0600
+
+
+Started GET "/assets/prev-light.png" for 127.0.0.1 at 2018-12-14 15:55:11 +0600
+
+
+Started GET "/assets/flexslider_icon/flexslider-icon.woff" for 127.0.0.1 at 2018-12-14 15:55:11 +0600
+
+
+Started GET "/users" for 127.0.0.1 at 2018-12-14 15:55:15 +0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT `users`.* FROM `users`[0m
+  Rendered users/index.html.erb within layouts/application (9.8ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 130ms (Views: 126.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-14 15:55:23 +0600
+Processing by BlogsController#landing as HTML
+  Rendered shared/_nav.html.erb (1.3ms)
+  Rendered shared/_contact.html.erb (0.2ms)
+  Rendered shared/_footer.html.erb (4.1ms)
+  Rendered blogs/landing.html.erb within layouts/application (42.8ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 163ms (Views: 160.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 15:55:24 +0600
+
+
+Started GET "/assets/et_line/et-line.woff" for 127.0.0.1 at 2018-12-14 15:55:24 +0600
+
+
+Started GET "/assets/section-10.jpg" for 127.0.0.1 at 2018-12-14 15:55:24 +0600
+
+
+Started GET "/assets/section-8.jpg" for 127.0.0.1 at 2018-12-14 15:55:24 +0600
+
+
+Started GET "/assets/section-9.jpg" for 127.0.0.1 at 2018-12-14 15:55:24 +0600
+
+
+Started GET "/assets/section-6.jpg" for 127.0.0.1 at 2018-12-14 15:55:24 +0600
+
+
+Started GET "/assets/testimonial_bg.jpg" for 127.0.0.1 at 2018-12-14 15:55:24 +0600
+
+
+Started GET "/assets/next-light.png" for 127.0.0.1 at 2018-12-14 15:55:24 +0600
+
+
+Started GET "/assets/flexslider_icon/flexslider-icon.woff" for 127.0.0.1 at 2018-12-14 15:55:24 +0600
+
+
+Started GET "/assets/prev-light.png" for 127.0.0.1 at 2018-12-14 15:55:24 +0600
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-12-14 15:55:31 +0600
+Processing by BlogsController#index as HTML
+  Rendered blogs/shared/_right_sidebar.erb (3.8ms)
+  Rendered shared/_footer.html.erb (3.6ms)
+  Rendered blogs/index.html.erb within layouts/application (21.6ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 127ms (Views: 124.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 15:55:32 +0600
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-12-14 15:55:57 +0600
+Processing by BlogsController#new as HTML
+Completed 401 Unauthorized in 3ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-12-14 15:55:57 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.4ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 135ms (Views: 132.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-14 15:56:08 +0600
+Processing by BlogsController#landing as HTML
+  Rendered shared/_nav.html.erb (1.5ms)
+  Rendered shared/_contact.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (4.0ms)
+  Rendered blogs/landing.html.erb within layouts/application (43.7ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 158ms (Views: 156.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 15:56:08 +0600
+
+
+Started GET "/assets/et_line/et-line.woff" for 127.0.0.1 at 2018-12-14 15:56:09 +0600
+
+
+Started GET "/assets/section-10.jpg" for 127.0.0.1 at 2018-12-14 15:56:09 +0600
+
+
+Started GET "/assets/section-8.jpg" for 127.0.0.1 at 2018-12-14 15:56:09 +0600
+
+
+Started GET "/assets/section-6.jpg" for 127.0.0.1 at 2018-12-14 15:56:09 +0600
+
+
+Started GET "/assets/testimonial_bg.jpg" for 127.0.0.1 at 2018-12-14 15:56:09 +0600
+
+
+Started GET "/assets/section-9.jpg" for 127.0.0.1 at 2018-12-14 15:56:09 +0600
+
+
+Started GET "/assets/next-light.png" for 127.0.0.1 at 2018-12-14 15:56:09 +0600
+
+
+Started GET "/assets/prev-light.png" for 127.0.0.1 at 2018-12-14 15:56:09 +0600
+
+
+Started GET "/assets/flexslider_icon/flexslider-icon.woff" for 127.0.0.1 at 2018-12-14 15:56:09 +0600
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-12-14 17:16:08 +0600
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (14.2ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (25.4ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 150ms (Views: 147.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-12-14 17:16:11 +0600
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (11.4ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (22.2ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 139ms (Views: 136.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2018-12-14 17:16:37 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Devise::PasswordsController#new as HTML
+  Rendered devise/shared/_links.html.erb (27.0ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (100.6ms)
+  Rendered shared/_nav.html.erb (3.3ms)
+Completed 200 OK in 1977ms (Views: 1889.6ms | ActiveRecord: 5.9ms)
+
+
+Started POST "/users/password" for 127.0.0.1 at 2018-12-14 17:17:05 +0600
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CnWhWvfk1VWRKsmzmcftm3xTh34UbFAIM/nQs7wSym3cfOYSjBmzJY3qqHankivQNt84k8HhcUwUBInNAwQ31A==", "user"=>{"email"=>"plabondotasad@gmail.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'plabondotasad@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`reset_password_token` = 'e1c7fddc16ed931a991034799431cb74ab885655ad2b67b2485950a7c3c917a0'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.8ms)[0m  [1mUPDATE `users` SET `reset_password_token` = 'e1c7fddc16ed931a991034799431cb74ab885655ad2b67b2485950a7c3c917a0', `reset_password_sent_at` = '2018-12-14 11:17:06.012200', `updated_at` = '2018-12-14 11:17:06.013705' WHERE `users`.`id` = 5[0m
+  [1m[35m (130.7ms)[0m  COMMIT
+  Rendered devise/mailer/reset_password_instructions.html.erb (10.6ms)
+
+Devise::Mailer#reset_password_instructions: processed outbound mail in 696.3ms
+
+Sent mail to plabondotasad@gmail.com (4260.3ms)
+Date: Fri, 14 Dec 2018 17:17:06 +0600
+From: syftetltd@gmail.com
+Reply-To: syftetltd@gmail.com
+To: plabondotasad@gmail.com
+Message-ID: <5c139132dfe65_3dd1be42b8717bb@nazrul-Latitude-E7440.mail>
+Subject: Reset password instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello plabondotasad@gmail.com!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/users/password/edit?reset_password_token=QHsCYu4_BNe-xN9j4NSH">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 5892ms (ActiveRecord: 133.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-12-14 17:17:11 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (14.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (36.3ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 171ms (Views: 167.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-12-14 17:43:11 +0600
+Processing by BlogsController#index as HTML
+  Rendered blogs/shared/_right_sidebar.erb (7.2ms)
+  Rendered shared/_footer.html.erb (4.3ms)
+  Rendered blogs/index.html.erb within layouts/application (33.4ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 173ms (Views: 157.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 17:43:12 +0600
+
+
+Started GET "/index" for 127.0.0.1 at 2018-12-14 17:43:31 +0600
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (39.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.2ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (148.8ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.6ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (146.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-14 17:43:35 +0600
+Processing by BlogsController#landing as HTML
+  Rendered shared/_nav.html.erb (1.3ms)
+  Rendered shared/_contact.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (4.0ms)
+  Rendered blogs/landing.html.erb within layouts/application (48.9ms)
+  Rendered shared/_nav.html.erb (0.9ms)
+Completed 200 OK in 165ms (Views: 162.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 17:43:37 +0600
+
+
+Started GET "/assets/et_line/et-line.woff" for 127.0.0.1 at 2018-12-14 17:43:37 +0600
+
+
+Started GET "/assets/section-10.jpg" for 127.0.0.1 at 2018-12-14 17:43:37 +0600
+
+
+Started GET "/assets/section-9.jpg" for 127.0.0.1 at 2018-12-14 17:43:37 +0600
+
+
+Started GET "/assets/section-8.jpg" for 127.0.0.1 at 2018-12-14 17:43:37 +0600
+
+
+Started GET "/assets/testimonial_bg.jpg" for 127.0.0.1 at 2018-12-14 17:43:37 +0600
+
+
+Started GET "/assets/section-6.jpg" for 127.0.0.1 at 2018-12-14 17:43:37 +0600
+
+
+Started GET "/assets/next-light.png" for 127.0.0.1 at 2018-12-14 17:43:37 +0600
+
+
+Started GET "/assets/prev-light.png" for 127.0.0.1 at 2018-12-14 17:43:37 +0600
+
+
+Started GET "/assets/flexslider_icon/flexslider-icon.woff" for 127.0.0.1 at 2018-12-14 17:43:37 +0600
+
+
+Started GET "/landing" for 127.0.0.1 at 2018-12-14 17:44:06 +0600
+
+ActionController::RoutingError (No route matches [GET] "/landing"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.6ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (85.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (102.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-14 17:44:10 +0600
+Processing by BlogsController#landing as HTML
+  Rendered shared/_nav.html.erb (1.5ms)
+  Rendered shared/_contact.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (4.3ms)
+  Rendered blogs/landing.html.erb within layouts/application (41.6ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 156ms (Views: 155.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 17:44:11 +0600
+
+
+Started GET "/assets/et_line/et-line.woff" for 127.0.0.1 at 2018-12-14 17:44:11 +0600
+
+
+Started GET "/assets/section-8.jpg" for 127.0.0.1 at 2018-12-14 17:44:11 +0600
+
+
+Started GET "/assets/section-10.jpg" for 127.0.0.1 at 2018-12-14 17:44:12 +0600
+
+
+Started GET "/assets/flexslider_icon/flexslider-icon.woff" for 127.0.0.1 at 2018-12-14 17:44:12 +0600
+
+
+Started GET "/assets/section-9.jpg" for 127.0.0.1 at 2018-12-14 17:44:12 +0600
+
+
+Started GET "/assets/next-light.png" for 127.0.0.1 at 2018-12-14 17:44:12 +0600
+
+
+Started GET "/assets/section-6.jpg" for 127.0.0.1 at 2018-12-14 17:44:12 +0600
+
+
+Started GET "/assets/prev-light.png" for 127.0.0.1 at 2018-12-14 17:44:12 +0600
+
+
+Started GET "/assets/testimonial_bg.jpg" for 127.0.0.1 at 2018-12-14 17:44:12 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-14 17:45:52 +0600
+Processing by BlogsController#landing as HTML
+  Rendered shared/_nav.html.erb (2.2ms)
+  Rendered shared/_contact.html.erb (0.1ms)
+  Rendered shared/_footer.html.erb (6.2ms)
+  Rendered blogs/landing.html.erb within layouts/application (52.9ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 208ms (Views: 190.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/section-10.jpg" for 127.0.0.1 at 2018-12-14 17:45:53 +0600
+
+
+Started GET "/assets/section-9.jpg" for 127.0.0.1 at 2018-12-14 17:45:53 +0600
+
+
+Started GET "/assets/section-8.jpg" for 127.0.0.1 at 2018-12-14 17:45:53 +0600
+
+
+Started GET "/assets/et_line/et-line.woff" for 127.0.0.1 at 2018-12-14 17:45:53 +0600
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 17:45:53 +0600
+
+
+Started GET "/assets/testimonial_bg.jpg" for 127.0.0.1 at 2018-12-14 17:45:53 +0600
+
+
+Started GET "/assets/section-6.jpg" for 127.0.0.1 at 2018-12-14 17:45:53 +0600
+
+
+Started GET "/assets/prev-light.png" for 127.0.0.1 at 2018-12-14 17:45:53 +0600
+
+
+Started GET "/assets/flexslider_icon/flexslider-icon.woff" for 127.0.0.1 at 2018-12-14 17:45:53 +0600
+
+
+Started GET "/assets/next-light.png" for 127.0.0.1 at 2018-12-14 17:45:53 +0600
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-12-14 17:47:32 +0600
+Processing by BlogsController#index as HTML
+  Rendered blogs/shared/_right_sidebar.erb (5.0ms)
+  Rendered shared/_footer.html.erb (3.1ms)
+  Rendered blogs/index.html.erb within layouts/application (27.6ms)
+  Rendered shared/_nav.html.erb (1.4ms)
+Completed 200 OK in 178ms (Views: 165.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-12-14 17:47:34 +0600
+Processing by BlogsController#new as HTML
+Completed 401 Unauthorized in 3ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-12-14 17:47:34 +0600
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (12.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (30.1ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 219ms (Views: 176.8ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-14 17:47:43 +0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MTM0D5JeUi34sB5hFKvvV9ZNzq4+csE2qAKyTfCP3wLnOnNH6aM0XeRwf6Qq/ikcnMFxQ+v/4HKP/+szT5kiuw==", "user"=>{"email"=>"plabondotasad@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Submit"}
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'plabondotasad@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 619ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MTM0D5JeUi34sB5hFKvvV9ZNzq4+csE2qAKyTfCP3wLnOnNH6aM0XeRwf6Qq/ikcnMFxQ+v/4HKP/+szT5kiuw==", "user"=>{"email"=>"plabondotasad@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Submit"}
+  Rendered devise/shared/_links.html.erb (10.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.4ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 687ms (Views: 155.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-14 17:48:17 +0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ozz5wMMtl8iNYBtNlWWgT/mLx3FN1Y6cm9agq7HY41F1Nb6IuNDxuJGgeoirMGYEswd4nJhYr9i8K/nVDs4e6A==", "user"=>{"email"=>"plabondotasad@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Submit"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'plabondotasad@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 401 Unauthorized in 517ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ozz5wMMtl8iNYBtNlWWgT/mLx3FN1Y6cm9agq7HY41F1Nb6IuNDxuJGgeoirMGYEswd4nJhYr9i8K/nVDs4e6A==", "user"=>{"email"=>"plabondotasad@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Submit"}
+  Rendered devise/shared/_links.html.erb (14.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (29.2ms)
+  Rendered shared/_nav.html.erb (1.1ms)
+Completed 200 OK in 717ms (Views: 191.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-14 17:48:24 +0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rExAQRCvNrxoptHzoyNHxg5s6af8ECU6JjZn3dmyKX96RQcJa1JQzHRmsDaddoGNROBWSimdBH4Byz6jZqTUxg==", "user"=>{"email"=>"plabondotasad@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'plabondotasad@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 523ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rExAQRCvNrxoptHzoyNHxg5s6af8ECU6JjZn3dmyKX96RQcJa1JQzHRmsDaddoGNROBWSimdBH4Byz6jZqTUxg==", "user"=>{"email"=>"plabondotasad@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Submit"}
+  Rendered devise/shared/_links.html.erb (9.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.2ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 685ms (Views: 168.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/theme/bootstrap.min.css.map" for 127.0.0.1 at 2018-12-14 17:49:39 +0600
+
+ActionController::RoutingError (No route matches [GET] "/assets/theme/bootstrap.min.css.map"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.8ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.8ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (110.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.8ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.5ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.8ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (135.2ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-14 17:49:52 +0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MOuDEcSkagVdKnovI5GrNzCocnn6xH8f3uI26Zi1ko7m4sRZv1kMdUHqG+odxG18eiTNlC9JXlv5H2+XJ6NvNw==", "user"=>{"email"=>"plabondotasad@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Submit"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'plabondotasad@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 401 Unauthorized in 538ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MOuDEcSkagVdKnovI5GrNzCocnn6xH8f3uI26Zi1ko7m4sRZv1kMdUHqG+odxG18eiTNlC9JXlv5H2+XJ6NvNw==", "user"=>{"email"=>"plabondotasad@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Submit"}
+  Rendered devise/shared/_links.html.erb (9.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.4ms)
+  Rendered shared/_nav.html.erb (1.3ms)
+Completed 200 OK in 698ms (Views: 183.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/theme/bootstrap.min.css.map" for 127.0.0.1 at 2018-12-14 17:49:54 +0600
+
+ActionController::RoutingError (No route matches [GET] "/assets/theme/bootstrap.min.css.map"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.5ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (118.0ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.6ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (71.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (147.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-14 17:50:03 +0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U919ftW/l492+YIyrbmMxukshvck5ykQdaVl5aTRcfuF1Do2rkLx/2o54/eT7EqNo6A5GvFqCFRSWDybG8eMQg==", "user"=>{"email"=>"plabondotasad@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Submit"}
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'plabondotasad@gmail.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 550ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U919ftW/l492+YIyrbmMxukshvck5ykQdaVl5aTRcfuF1Do2rkLx/2o54/eT7EqNo6A5GvFqCFRSWDybG8eMQg==", "user"=>{"email"=>"plabondotasad@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Submit"}
+  Rendered devise/shared/_links.html.erb (15.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (33.7ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 751ms (Views: 151.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/theme/bootstrap.min.css.map" for 127.0.0.1 at 2018-12-14 17:50:05 +0600
+
+ActionController::RoutingError (No route matches [GET] "/assets/theme/bootstrap.min.css.map"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.6ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (124.6ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.6ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (89.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (3.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (195.3ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-14 17:50:47 +0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D2v7PQXPPhe/Rx/KWotjP18iIWCm/FR97sTaraopKsfZYrx1fjJYZ6OHfg9k3qV0Fa6ejXNxdTnJOYPTFT/Xfg==", "user"=>{"email"=>"asad@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Submit"}
+  [1m[35mUser Load (1.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`email` = 'asad@test.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 401 Unauthorized in 525ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D2v7PQXPPhe/Rx/KWotjP18iIWCm/FR97sTaraopKsfZYrx1fjJYZ6OHfg9k3qV0Fa6ejXNxdTnJOYPTFT/Xfg==", "user"=>{"email"=>"asad@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Submit"}
+  Rendered devise/shared/_links.html.erb (13.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (25.7ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 660ms (Views: 144.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/theme/bootstrap.min.css.map" for 127.0.0.1 at 2018-12-14 17:50:50 +0600
+
+ActionController::RoutingError (No route matches [GET] "/assets/theme/bootstrap.min.css.map"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.6ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.8ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.8ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (138.6ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.8ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (7.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.6ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (148.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (222.3ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-12-14 17:50:55 +0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rROA0/7g9sA3l3wQqWQ2gOHT6717x1tp/xKiWhgMS1h7GsebhR2QsCtXHdWXMfDLq19UUK5Kei3Y7/skpxq24Q==", "user"=>{"email"=>"asad@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'asad@test.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2018-12-14 05:38:48.000000', `current_sign_in_at` = '2018-12-14 11:50:55.612300', `sign_in_count` = 3, `updated_at` = '2018-12-14 11:50:55.616896' WHERE `users`.`id` = 1[0m
+  [1m[35m (96.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 655ms (ActiveRecord: 98.6ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-14 17:50:55 +0600
+Processing by BlogsController#index as HTML
+  Rendered blogs/shared/_right_sidebar.erb (5.6ms)
+  Rendered shared/_footer.html.erb (2.9ms)
+  Rendered blogs/index.html.erb within layouts/application (29.3ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_nav.html.erb (3.4ms)
+Completed 200 OK in 153ms (Views: 150.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 17:50:56 +0600
+
+
+Started GET "/assets/theme/bootstrap.min.css.map" for 127.0.0.1 at 2018-12-14 17:50:57 +0600
+
+ActionController::RoutingError (No route matches [GET] "/assets/theme/bootstrap.min.css.map"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.0ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (112.2ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (70.0ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.0ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (140.3ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-12-14 17:51:11 +0600
+Processing by BlogsController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered blogs/_form.html.erb (73.4ms)
+  Rendered blogs/new.html.erb within layouts/application (76.5ms)
+  Rendered shared/_nav.html.erb (1.0ms)
+Completed 200 OK in 231ms (Views: 203.0ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2018-12-14 17:51:21 +0600
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B/frWhs1OPHm6pBbkIL3E01UPyCEVzQKrWzfi0EY/b4TlPPaOOdw0/fWeWvjcxudQGoDwZ+E3FOOSmgjgc/jlQ==", "blog"=>{"title"=>"ewrwer", "subtitle"=>"wrwer", "description"=>"wrewer"}, "commit"=>"Create Blog"}
+  [1m[36mUser Load (13.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (5.5ms)[0m  BEGIN
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO `blogs` (`title`, `subtitle`, `description`, `created_at`, `updated_at`) VALUES ('ewrwer', 'wrwer', 'wrewer', '2018-12-14 11:51:21.703401', '2018-12-14 11:51:21.703401')[0m
+  [1m[35m (93.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/blogs/4
+Completed 302 Found in 152ms (ActiveRecord: 113.9ms)
+
+
+Started GET "/blogs/4" for 127.0.0.1 at 2018-12-14 17:51:21 +0600
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBlog Load (0.9ms)[0m  [1mSELECT  `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 4 LIMIT 1[0m
+  Rendered blogs/shared/_right_sidebar.erb (7.0ms)
+  Rendered shared/_footer.html.erb (5.2ms)
+  Rendered blogs/show.html.erb within layouts/application (29.7ms)
+  [1m[35mUser Load (1.9ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_nav.html.erb (8.1ms)
+Completed 200 OK in 203ms (Views: 189.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 17:51:22 +0600
+
+
+Started GET "/assets/next-light.png" for 127.0.0.1 at 2018-12-14 17:51:22 +0600
+
+
+Started GET "/assets/prev-light.png" for 127.0.0.1 at 2018-12-14 17:51:22 +0600
+
+
+Started GET "/assets/flexslider_icon/flexslider-icon.woff" for 127.0.0.1 at 2018-12-14 17:51:22 +0600
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-12-14 17:51:35 +0600
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered blogs/_form.html.erb (8.8ms)
+  Rendered blogs/new.html.erb within layouts/application (12.0ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 146ms (Views: 140.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-12-14 17:58:09 +0600
+Processing by BlogsController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered blogs/_form.html.erb (9.6ms)
+  Rendered blogs/new.html.erb within layouts/application (11.9ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 142ms (Views: 137.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-12-14 17:59:06 +0600
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered blogs/_form.html.erb (7.0ms)
+  Rendered blogs/new.html.erb within layouts/application (8.8ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 135ms (Views: 129.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-12-14 18:01:05 +0600
+Processing by BlogsController#new as HTML
+  [1m[35mUser Load (2.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered blogs/_form.html.erb (8.8ms)
+  Rendered blogs/new.html.erb within layouts/application (11.7ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 181ms (Views: 169.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-12-14 18:02:16 +0600
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered blogs/_form.html.erb (17.9ms)
+  Rendered blogs/new.html.erb within layouts/application (21.5ms)
+  Rendered shared/_nav.html.erb (0.8ms)
+Completed 200 OK in 149ms (Views: 143.4ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2018-12-14 18:02:47 +0600
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vuZ2GNmg5mYPMtFEWabzVIN2cpto+veN8XChvZRMIoOqhW6Y+nKuRB4OOHQqVx/ajkhOenMpH9TSVhYVVJs8qA==", "blog"=>{"title"=>"sdfsdfsd", "subtitle"=>"sdfsdfsd", "description"=>"sdfsdfsdf"}, "commit"=>"Submit"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO `blogs` (`title`, `subtitle`, `description`, `created_at`, `updated_at`) VALUES ('sdfsdfsd', 'sdfsdfsd', 'sdfsdfsdf', '2018-12-14 12:02:47.882030', '2018-12-14 12:02:47.882030')
+  [1m[36m (119.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/blogs/5
+Completed 302 Found in 135ms (ActiveRecord: 121.3ms)
+
+
+Started GET "/blogs/5" for 127.0.0.1 at 2018-12-14 18:02:48 +0600
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mBlog Load (2.6ms)[0m  SELECT  `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 5 LIMIT 1
+  Rendered blogs/shared/_right_sidebar.erb (4.5ms)
+  Rendered shared/_footer.html.erb (4.6ms)
+  Rendered blogs/show.html.erb within layouts/application (21.8ms)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_nav.html.erb (5.8ms)
+Completed 200 OK in 211ms (Views: 204.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 18:02:48 +0600
+
+
+Started GET "/assets/next-light.png" for 127.0.0.1 at 2018-12-14 18:02:48 +0600
+
+
+Started GET "/assets/flexslider_icon/flexslider-icon.woff" for 127.0.0.1 at 2018-12-14 18:02:48 +0600
+
+
+Started GET "/assets/prev-light.png" for 127.0.0.1 at 2018-12-14 18:02:48 +0600
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-12-14 18:03:27 +0600
+Processing by BlogsController#new as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered blogs/_form.html.erb (7.2ms)
+  Rendered blogs/new.html.erb within layouts/application (10.9ms)
+  Rendered shared/_nav.html.erb (0.7ms)
+Completed 200 OK in 154ms (Views: 148.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs/1" for 127.0.0.1 at 2018-12-14 18:09:51 +0600
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (1.1ms)[0m  [1mSELECT  `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 1 LIMIT 1[0m
+  Rendered blogs/shared/_right_sidebar.erb (6.2ms)
+  Rendered shared/_footer.html.erb (3.5ms)
+  Rendered blogs/show.html.erb within layouts/application (23.3ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_nav.html.erb (4.1ms)
+Completed 200 OK in 162ms (Views: 156.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 18:09:52 +0600
+
+
+Started GET "/assets/next-light.png" for 127.0.0.1 at 2018-12-14 18:09:52 +0600
+
+
+Started GET "/assets/prev-light.png" for 127.0.0.1 at 2018-12-14 18:09:52 +0600
+
+
+Started GET "/assets/flexslider_icon/flexslider-icon.woff" for 127.0.0.1 at 2018-12-14 18:09:52 +0600
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-12-14 18:10:17 +0600
+Processing by BlogsController#index as HTML
+  Rendered blogs/shared/_right_sidebar.erb (5.4ms)
+  Rendered shared/_footer.html.erb (3.3ms)
+  Rendered blogs/index.html.erb within layouts/application (26.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_nav.html.erb (3.5ms)
+Completed 200 OK in 166ms (Views: 163.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 18:10:18 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddImageToBlogs (20181214121303)
+  [1m[35m (1216.3ms)[0m  ALTER TABLE `blogs` ADD `image_url` varchar(255)
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20181214121303')
+  [1m[36m (54.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (58.3ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'light_blog_ror_development'
+  AND fk.table_name = 'blogs'
+[0m
+  [1m[35m (0.5ms)[0m  SHOW CREATE TABLE `blogs`
+  [1m[36m (0.6ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'light_blog_ror_development'
+  AND fk.table_name = 'comments'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `comments`
+  [1m[36m (0.6ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'light_blog_ror_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.4ms)[0m  SHOW CREATE TABLE `users`
+
+
+Started GET "/assets/theme/bootstrap.min.css.map" for 127.0.0.1 at 2018-12-14 18:15:36 +0600
+  [1m[35mActiveRecord::SchemaMigration Load (0.7ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+ActionController::RoutingError (No route matches [GET] "/assets/theme/bootstrap.min.css.map"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.2ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (91.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.5ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (135.4ms)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-12-14 18:19:40 +0600
+Processing by BlogsController#index as HTML
+  Rendered blogs/shared/_right_sidebar.erb (6.0ms)
+  Rendered shared/_footer.html.erb (6.1ms)
+  Rendered blogs/index.html.erb within layouts/application (26.0ms)
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_nav.html.erb (33.3ms)
+Completed 200 OK in 258ms (Views: 236.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 18:19:41 +0600
+
+
+Started GET "/assets/theme/bootstrap.min.css.map" for 127.0.0.1 at 2018-12-14 18:19:41 +0600
+
+ActionController::RoutingError (No route matches [GET] "/assets/theme/bootstrap.min.css.map"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (159.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (5.0ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (3.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (115.5ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (2.5ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (7.0ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (274.6ms)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-12-14 18:21:05 +0600
+Processing by BlogsController#index as HTML
+  [1m[35mBlog Load (0.8ms)[0m  SELECT `blogs`.* FROM `blogs`
+  Rendered blogs/shared/_right_sidebar.erb (6.6ms)
+  Rendered shared/_footer.html.erb (3.0ms)
+  Rendered blogs/index.html.erb within layouts/application (38.8ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_nav.html.erb (3.8ms)
+Completed 200 OK in 168ms (Views: 161.8ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 18:21:06 +0600
+
+
+Started GET "/assets/theme/bootstrap.min.css.map" for 127.0.0.1 at 2018-12-14 18:21:06 +0600
+
+ActionController::RoutingError (No route matches [GET] "/assets/theme/bootstrap.min.css.map"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (10.8ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.0ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (124.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.6ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (96.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.6ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (168.4ms)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-12-14 18:26:44 +0600
+Processing by BlogsController#index as HTML
+  [1m[35mBlog Load (0.9ms)[0m  SELECT `blogs`.* FROM `blogs`
+  Rendered blogs/index.html.erb within layouts/application (14.3ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionController::UrlGenerationError - No route matches {:action=>"show", :controller=>"blogs"} missing required keys: [:id]:
+  app/views/blogs/index.html.erb:23:in `block in _app_views_blogs_index_html_erb__3535597637773723336_69832556211600'
+  app/views/blogs/index.html.erb:19:in `_app_views_blogs_index_html_erb__3535597637773723336_69832556211600'
+
+
+
+Started POST "/__better_errors/deb6e57f1e78ac71/variables" for 127.0.0.1 at 2018-12-14 18:26:45 +0600
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-12-14 18:29:03 +0600
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (1.0ms)[0m  [1mSELECT `blogs`.* FROM `blogs`[0m
+  Rendered blogs/shared/_right_sidebar.erb (7.2ms)
+  Rendered shared/_footer.html.erb (4.4ms)
+  Rendered blogs/index.html.erb within layouts/application (43.2ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_nav.html.erb (3.5ms)
+Completed 200 OK in 218ms (Views: 214.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 18:29:04 +0600
+
+
+Started GET "/assets/theme/bootstrap.min.css.map" for 127.0.0.1 at 2018-12-14 18:29:05 +0600
+
+ActionController::RoutingError (No route matches [GET] "/assets/theme/bootstrap.min.css.map"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.0ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (110.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.5ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (70.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.2ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (138.3ms)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-12-14 18:29:31 +0600
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (1.0ms)[0m  [1mSELECT `blogs`.* FROM `blogs`[0m
+  Rendered blogs/shared/_right_sidebar.erb (7.0ms)
+  Rendered shared/_footer.html.erb (3.4ms)
+  Rendered blogs/index.html.erb within layouts/application (27.6ms)
+  [1m[35mUser Load (0.9ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_nav.html.erb (5.0ms)
+Completed 200 OK in 217ms (Views: 213.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 18:29:32 +0600
+
+
+Started GET "/assets/theme/bootstrap.min.css.map" for 127.0.0.1 at 2018-12-14 18:29:32 +0600
+
+ActionController::RoutingError (No route matches [GET] "/assets/theme/bootstrap.min.css.map"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (51.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.2ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (172.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (64.8ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (131.6ms)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-12-14 18:30:46 +0600
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.7ms)[0m  [1mSELECT `blogs`.* FROM `blogs`[0m
+  Rendered blogs/shared/_right_sidebar.erb (6.3ms)
+  Rendered shared/_footer.html.erb (3.3ms)
+  Rendered blogs/index.html.erb within layouts/application (23.8ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_nav.html.erb (3.8ms)
+Completed 200 OK in 166ms (Views: 162.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 18:30:47 +0600
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-12-14 18:30:51 +0600
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.7ms)[0m  [1mSELECT `blogs`.* FROM `blogs`[0m
+  Rendered blogs/shared/_right_sidebar.erb (4.7ms)
+  Rendered shared/_footer.html.erb (2.9ms)
+  Rendered blogs/index.html.erb within layouts/application (20.8ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_nav.html.erb (3.3ms)
+Completed 200 OK in 147ms (Views: 143.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 18:30:52 +0600
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-14 18:31:01 +0600
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (1.1ms)[0m  [1mSELECT `blogs`.* FROM `blogs`[0m
+  Rendered blogs/shared/_right_sidebar.erb (6.6ms)
+  Rendered shared/_footer.html.erb (5.2ms)
+  Rendered blogs/index.html.erb within layouts/application (43.1ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_nav.html.erb (3.4ms)
+Completed 200 OK in 163ms (Views: 158.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-12-14 18:31:16 +0600
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (1.0ms)[0m  [1mSELECT `blogs`.* FROM `blogs`[0m
+  Rendered blogs/shared/_right_sidebar.erb (7.9ms)
+  Rendered shared/_footer.html.erb (5.7ms)
+  Rendered blogs/index.html.erb within layouts/application (31.7ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_nav.html.erb (3.4ms)
+Completed 200 OK in 179ms (Views: 175.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/blog/4" for 127.0.0.1 at 2018-12-14 18:32:28 +0600
+
+ActionController::RoutingError (No route matches [GET] "/blog/4"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (9.8ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (90.0ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (53.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (102.6ms)
+
+
+Started GET "/blog/1" for 127.0.0.1 at 2018-12-14 18:32:32 +0600
+
+ActionController::RoutingError (No route matches [GET] "/blog/1"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.6ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.2ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (81.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.6ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.2ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (123.4ms)
+
+
+Started GET "/blog/2" for 127.0.0.1 at 2018-12-14 18:32:37 +0600
+
+ActionController::RoutingError (No route matches [GET] "/blog/2"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.5ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (83.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (2.4ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (136.6ms)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-12-14 18:32:41 +0600
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (1.5ms)[0m  [1mSELECT `blogs`.* FROM `blogs`[0m
+  Rendered blogs/shared/_right_sidebar.erb (7.5ms)
+  Rendered shared/_footer.html.erb (5.3ms)
+  Rendered blogs/index.html.erb within layouts/application (36.4ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_nav.html.erb (4.3ms)
+Completed 200 OK in 184ms (Views: 180.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 18:32:42 +0600
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-12-14 18:44:55 +0600
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 53ms
+
+NameError - uninitialized constant Blog::ImageUploader:
+  app/models/blog.rb:6:in `<class:Blog>'
+  app/models/blog.rb:1:in `<top (required)>'
+  app/controllers/blogs_controller.rb:22:in `new'
+
+
+
+Started POST "/__better_errors/47334b984f159c04/variables" for 127.0.0.1 at 2018-12-14 18:44:56 +0600
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-12-14 18:45:09 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BlogsController#new as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered blogs/_form.html.erb (128.4ms)
+  Rendered blogs/new.html.erb within layouts/application (138.9ms)
+  Rendered shared/_nav.html.erb (2.4ms)
+Completed 200 OK in 2162ms (Views: 2010.7ms | ActiveRecord: 6.4ms)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2018-12-14 18:45:41 +0600
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SRFab68oDo3uaOuKk4znu1JELeeF/ma4TFZjYYYp7t5dckLvjPpGr/9UArrgfQs1X3oRBp4tjuFvcNTJRv7w9Q==", "blog"=>{"title"=>"sdfsdfs", "subtitle"=>"sdfsdf", "description"=>"sdfsdfsdf sdfsdfs sdfdsf", "image_url"=>#<ActionDispatch::Http::UploadedFile:0x00000004b9b078 @tempfile=#<Tempfile:/tmp/RackMultipart20181214-19339-sycrr8.jpg>, @original_filename="value1.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"blog[image_url]\"; filename=\"value1.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Unpermitted parameter: image_url
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `blogs` (`title`, `subtitle`, `description`, `created_at`, `updated_at`) VALUES ('sdfsdfs', 'sdfsdf', 'sdfsdfsdf sdfsdfs sdfdsf', '2018-12-14 12:45:41.563614', '2018-12-14 12:45:41.563614')[0m
+  [1m[35m (103.9ms)[0m  COMMIT
+Redirected to http://localhost:3000/blogs/6
+Completed 302 Found in 121ms (ActiveRecord: 105.8ms)
+
+
+Started GET "/blogs/6" for 127.0.0.1 at 2018-12-14 18:45:41 +0600
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mBlog Load (0.7ms)[0m  [1mSELECT  `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 6 LIMIT 1[0m
+  Rendered blogs/shared/_right_sidebar.erb (4.7ms)
+  Rendered shared/_footer.html.erb (3.7ms)
+  Rendered blogs/show.html.erb within layouts/application (22.0ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered shared/_nav.html.erb (3.5ms)
+Completed 200 OK in 180ms (Views: 172.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 18:45:42 +0600
+
+
+Started GET "/assets/next-light.png" for 127.0.0.1 at 2018-12-14 18:45:42 +0600
+
+
+Started GET "/assets/prev-light.png" for 127.0.0.1 at 2018-12-14 18:45:42 +0600
+
+
+Started GET "/assets/flexslider_icon/flexslider-icon.woff" for 127.0.0.1 at 2018-12-14 18:45:42 +0600
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-12-14 18:46:32 +0600
+Processing by BlogsController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered blogs/_form.html.erb (6.2ms)
+  Rendered blogs/new.html.erb within layouts/application (7.9ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 184ms (Views: 119.8ms | ActiveRecord: 4.7ms)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2018-12-14 18:46:40 +0600
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lW/7L8NouJNRQb5TgxpBuvufu5/YdGVc5bpEqhTvTK2BDOOv4LrwsUB9V2Pw66009qGHfsOnjQXGnPMC1DhShg==", "blog"=>{"title"=>"dsfsdf", "subtitle"=>"sdfsdfs", "description"=>"sdfsdf", "image_url"=>#<ActionDispatch::Http::UploadedFile:0x007f7a8076b130 @tempfile=#<Tempfile:/tmp/RackMultipart20181214-19339-d2v68c.png>, @original_filename="404_mdb.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"blog[image_url]\"; filename=\"404_mdb.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Submit"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `blogs` (`title`, `subtitle`, `description`, `image_url`, `created_at`, `updated_at`) VALUES ('dsfsdf', 'sdfsdfs', 'sdfsdf', '#<ActionDispatch::Http::UploadedFile:0x007f7a8076b130>', '2018-12-14 12:46:40.442259', '2018-12-14 12:46:40.442259')
+  [1m[36m (176.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/blogs/7
+Completed 302 Found in 197ms (ActiveRecord: 178.6ms)
+
+
+Started GET "/blogs/7" for 127.0.0.1 at 2018-12-14 18:46:40 +0600
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mBlog Load (0.7ms)[0m  SELECT  `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 7 LIMIT 1
+  Rendered blogs/shared/_right_sidebar.erb (4.0ms)
+  Rendered shared/_footer.html.erb (4.7ms)
+  Rendered blogs/show.html.erb within layouts/application (24.2ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_nav.html.erb (4.6ms)
+Completed 200 OK in 152ms (Views: 147.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 18:46:41 +0600
+
+
+Started GET "/assets/next-light.png" for 127.0.0.1 at 2018-12-14 18:46:41 +0600
+
+
+Started GET "/assets/prev-light.png" for 127.0.0.1 at 2018-12-14 18:46:41 +0600
+
+
+Started GET "/assets/flexslider_icon/flexslider-icon.woff" for 127.0.0.1 at 2018-12-14 18:46:41 +0600
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-12-14 18:48:30 +0600
+Processing by BlogsController#index as HTML
+  [1m[35mBlog Load (1.0ms)[0m  SELECT `blogs`.* FROM `blogs`
+  Rendered blogs/shared/_right_sidebar.erb (4.1ms)
+  Rendered shared/_footer.html.erb (4.0ms)
+  Rendered blogs/index.html.erb within layouts/application (25.9ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_nav.html.erb (3.4ms)
+Completed 200 OK in 151ms (Views: 147.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 18:48:31 +0600
+
+
+Started POST "/blogs" for 127.0.0.1 at 2018-12-14 18:51:04 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lW/7L8NouJNRQb5TgxpBuvufu5/YdGVc5bpEqhTvTK2BDOOv4LrwsUB9V2Pw66009qGHfsOnjQXGnPMC1DhShg==", "blog"=>{"title"=>"dfsdf", "subtitle"=>"sfsdf", "description"=>"sfdsdf", "image_url"=>#<ActionDispatch::Http::UploadedFile:0x00000003ae7a88 @tempfile=#<Tempfile:/tmp/RackMultipart20181214-19715-1jmhcm9.png>, @original_filename="404_mdb.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"blog[image_url]\"; filename=\"404_mdb.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Submit"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO `blogs` (`title`, `subtitle`, `description`, `image_url`, `created_at`, `updated_at`) VALUES ('dfsdf', 'sfsdf', 'sfdsdf', '404_mdb.png', '2018-12-14 12:51:04.640484', '2018-12-14 12:51:04.640484')
+  [1m[36m (125.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/blogs/8
+Completed 302 Found in 292ms (ActiveRecord: 131.8ms)
+
+
+Started GET "/blogs/8" for 127.0.0.1 at 2018-12-14 18:51:04 +0600
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mBlog Load (0.6ms)[0m  SELECT  `blogs`.* FROM `blogs` WHERE `blogs`.`id` = 8 LIMIT 1
+  Rendered blogs/shared/_right_sidebar.erb (5.6ms)
+  Rendered shared/_footer.html.erb (5.0ms)
+  Rendered blogs/show.html.erb within layouts/application (1690.7ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_nav.html.erb (8.0ms)
+Completed 200 OK in 1911ms (Views: 1903.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 18:51:07 +0600
+
+
+Started GET "/assets/next-light.png" for 127.0.0.1 at 2018-12-14 18:51:07 +0600
+
+
+Started GET "/assets/prev-light.png" for 127.0.0.1 at 2018-12-14 18:51:07 +0600
+
+
+Started GET "/assets/flexslider_icon/flexslider-icon.woff" for 127.0.0.1 at 2018-12-14 18:51:07 +0600
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-12-14 18:51:52 +0600
+Processing by BlogsController#index as HTML
+  [1m[35mBlog Load (1.0ms)[0m  SELECT `blogs`.* FROM `blogs`
+  Rendered blogs/shared/_right_sidebar.erb (7.8ms)
+  Rendered shared/_footer.html.erb (5.3ms)
+  Rendered blogs/index.html.erb within layouts/application (40.3ms)
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered shared/_nav.html.erb (6.5ms)
+Completed 200 OK in 210ms (Views: 205.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/uploads/blog/image_url/7/%23%3CActionDispatch%3A%3AHttp%3A%3AUploadedFile%3A0x007f7a8076b130%3E" for 127.0.0.1 at 2018-12-14 18:51:52 +0600
+
+ActionController::RoutingError (No route matches [GET] "/uploads/blog/image_url/7/%23%3CActionDispatch%3A%3AHttp%3A%3AUploadedFile%3A0x007f7a8076b130%3E"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  rack (1.6.11) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.11) lib/rack/handler/webrick.rb:88:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/nazrul/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (21.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (31.9ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (200.3ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.8ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.5ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.6ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.6ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (94.0ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (6.0ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.7ms)
+  Rendered /home/nazrul/.rvm/gems/ruby-2.3.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (195.9ms)
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 18:51:53 +0600
