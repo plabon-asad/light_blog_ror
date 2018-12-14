@@ -50,13 +50,17 @@
             </div>
 
 
-            <div class="text-center" style="padding-top: 15px">
+            <div class="text-center form-group" style="padding-top: 15px">
               <%= f.submit 'Submit', class: 'btn btn-block btn-round btn-d', id: 'cfsubmit' %>
               <!--<button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Submit</button>-->
             </div>
           <!--</form>-->
         <% end %>
+
         <div class="ajax-response font-alt" id="contactFormResponse"></div>
+        <div class="form-group">
+          <%= render "devise/shared/links" %>
+        </div>
       </div>
     </div>
   </div>
