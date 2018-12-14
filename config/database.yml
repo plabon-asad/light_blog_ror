@@ -11,7 +11,7 @@ default: &default
 
 development:
   <<: *default
-  username: 'root'
+  username: 'rodfsdfot'
   password: 'password'
   database: light_blog_ror_development
 
