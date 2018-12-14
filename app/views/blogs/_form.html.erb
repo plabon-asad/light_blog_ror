@@ -1,29 +1,57 @@
-<%= form_for(@blog) do |f| %>
-  <% if @blog.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
-
-      <ul>
-      <% @blog.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+<section class="module" id="signin">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <h2 class="module-title font-alt">Create Post</h2>
+        <div class="module-subtitle font-serif"></div>
+      </div>
     </div>
-  <% end %>
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <%= form_for(@blog) do |f| %>
+          <% if @blog.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
 
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+              <ul>
+                <% @blog.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+
+          <div class="form-group">
+            <%= f.label :title, class: 'sr-only' %><br/>
+            <%= f.text_field :title, class: 'form-control',autocomplete: 'off', :placeholder => 'Title...' %>
+            <p class="help-block text-danger"></p>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :subtitle, class: 'sr-only' %><br/>
+            <%= f.text_field :subtitle, class: 'form-control',autocomplete: 'off', :placeholder => 'Subtitle...' %>
+            <p class="help-block text-danger"></p>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :description, class: 'sr-only' %><br/>
+            <%= f.text_area :description,rows: '7', class: 'form-control',autocomplete: 'off', :placeholder => 'Description...' %>
+            <p class="help-block text-danger"></p>
+          </div>
+
+          <div class="text-center form-group" style="padding-top: 15px">
+            <%= f.submit 'Submit', class: 'btn btn-block btn-round btn-d', id: 'cfsubmit' %>
+          </div>
+
+        <% end %>
+
+      </div>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :subtitle %><br>
-    <%= f.text_field :subtitle %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</section>
+
+
+
+
+
+
