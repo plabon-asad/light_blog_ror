@@ -41852,3 +41852,71 @@ Started GET "/assets/next-light.png" for 127.0.0.1 at 2018-12-14 14:33:50 +0600
 
 
 Started GET "/assets/prev-light.png" for 127.0.0.1 at 2018-12-14 14:33:50 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-14 14:54:08 +0600
+
+Mysql2::Error - Access denied for user 'rodfsdfot'@'localhost' (using password: YES):
+
+
+
+Started POST "/__better_errors/e82d59cbccf1a71b/variables" for 127.0.0.1 at 2018-12-14 14:54:08 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-14 14:54:36 +0600
+
+Mysql2::Error - Access denied for user 'rodfsdfot'@'localhost' (using password: YES):
+
+
+
+Started POST "/__better_errors/ed4eed251eb1ec38/variables" for 127.0.0.1 at 2018-12-14 14:54:36 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-14 14:55:53 +0600
+
+Mysql2::Error - Access denied for user 'rodfsdfot'@'localhost' (using password: YES):
+
+
+
+Started POST "/__better_errors/ecaf3e0621bc36b9/variables" for 127.0.0.1 at 2018-12-14 14:55:53 +0600
+
+
+Started GET "/" for 127.0.0.1 at 2018-12-14 14:56:07 +0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by BlogsController#landing as HTML
+  Rendered shared/_nav.html.erb (23.2ms)
+  Rendered shared/_contact.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (10.6ms)
+  Rendered blogs/landing.html.erb within layouts/application (2088.2ms)
+  Rendered shared/_nav.html.erb (0.6ms)
+Completed 200 OK in 2404ms (Views: 2363.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/section-10.jpg" for 127.0.0.1 at 2018-12-14 14:56:10 +0600
+
+
+Started GET "/assets/section-9.jpg" for 127.0.0.1 at 2018-12-14 14:56:10 +0600
+
+
+Started GET "/assets/section-8.jpg" for 127.0.0.1 at 2018-12-14 14:56:10 +0600
+
+
+Started GET "/assets/font_awesome/fontawesome-webfont.woff2" for 127.0.0.1 at 2018-12-14 14:56:10 +0600
+
+
+Started GET "/assets/et_line/et-line.woff" for 127.0.0.1 at 2018-12-14 14:56:10 +0600
+
+
+Started GET "/assets/testimonial_bg.jpg" for 127.0.0.1 at 2018-12-14 14:56:10 +0600
+
+
+Started GET "/assets/section-6.jpg" for 127.0.0.1 at 2018-12-14 14:56:10 +0600
+
+
+Started GET "/assets/next-light.png" for 127.0.0.1 at 2018-12-14 14:56:10 +0600
+
+
+Started GET "/assets/prev-light.png" for 127.0.0.1 at 2018-12-14 14:56:10 +0600
+
+
+Started GET "/assets/flexslider_icon/flexslider-icon.woff" for 127.0.0.1 at 2018-12-14 14:56:10 +0600
